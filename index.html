@@ -1,32 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Digital ID Card</title>
-  <link rel="stylesheet" href="/css/styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Website</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-  <div class="card">
-    <img src="images/avatar.jpg" alt="Avatar" class="avatar" />
-    <h1 class="main-heading">Dalal Mohammed</h1>
-    <h3 class="sub-heading">Web Developer</h3>
-    <p class="bio">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam dicta earum, eligendi voluptate repellendus quidem quod quae maxime quo eos consequuntur, corporis cum iure id veniam similique, facere distinctio in!<br>
-      
-    </p>
-    
-    <hr />
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#bio">Bio</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        
+        <div class="hero" id="bio">
+            <img src="/images/avatar.jpg" alt="Profile Picture" class="profile-img">
+            <h1>Hello, I'm Dalal</h1>
+            <p class="bio-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat quod quas repellat. Eaque obcaecati nostrum laudantium dolorem eos nobis optio?</p>
+        </div>
+    </header>
 
-    <ul class="skills-list">
-      <li>Lorem ipsum</li>
-      <li>Lorem ipsum</li>
-      <li>Lorem ipsum</li>
-      <li>Lorem ipsum</li>
-      
-    </ul>
+    <main>
+        <section class="skills-section" id="skills">
+            <h2>My Skills</h2>
+            <div class="skills-container">
+                <div class="skill">
+                    <i class="fab fa-html5"></i>
+                    <h3>HTML5</h3>
+                    <p>Semantic markup and accessibility</p>
+                </div>
+                <div class="skill">
+                    <i class="fab fa-css3-alt"></i>
+                    <h3>CSS3</h3>
+                    <p>Responsive design and animations</p>
+                </div>
+                <div class="skill">
+                    <i class="fab fa-js"></i>
+                    <h3>JavaScript</h3>
+                    <p>Interactive web experiences</p>
+                </div>
+                <div class="skill">
+                    <i class="fas fa-paint-brush"></i>
+                    <h3>UI/UX</h3>
+                    <p>User-centered design</p>
+                </div>
+            </div>
+        </section>
 
-    <a href="mailto:dalal@example.com" class="contact-button">Contact Me</a>
-  </div>
+        <section class="portfolio-section" id="portfolio">
+            <h2>My Work</h2>
+            <div class="portfolio-container">
+                <div class="portfolio-item">
+                    <img src="./images/ecommerce-websites.jpg" alt="Project 1">
+                    <h3>E-commerce Site</h3>
+                    <p>A fully responsive online store</p>
+                </div>
+                <div class="portfolio-item">
+                    <img src="./images/arik-qBiqJnL2ieqVlvCUm0PdvANe0bIVLD.jpg" alt="Project 2">
+                    <h3>Portfolio Template</h3>
+                    <p>Clean, modern portfolio design</p>
+                </div>
+                <div class="portfolio-item">
+                    <img src="./images/UIFresh-weather-app-ui-banner-1.jpg" alt="Project 3">
+                    <h3>Weather App</h3>
+                    <p>Real-time weather application</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact">
+        <h2>Get In Touch</h2>
+        <div class="social-links">
+            <a href="#"><i class="fas fa-envelope"></i></a>
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+        <p class="copyright">&copy; 2025 My Personal Website. All rights reserved.</p>
+    </footer>
 </body>
 </html>
