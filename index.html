@@ -14,14 +14,17 @@
                 <li><a href="#bio">Bio</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#certificates">Certificates</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
-        
+
         <div class="hero" id="bio">
             <img src="/images/avatar.jpg" alt="Profile Picture" class="profile-img">
             <h1>Hello, I'm Dalal</h1>
             <p class="bio-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat quod quas repellat. Eaque obcaecati nostrum laudantium dolorem eos nobis optio?</p>
+            <a href="/documents/Dalal_CV.pdf" download class="download-cv">Download My Resume</a>
         </div>
     </header>
 
@@ -72,6 +75,35 @@
                 </div>
             </div>
         </section>
+
+        <section class="certificates-section" id="certificates">
+            <h2>My Certificates</h2>
+            <div class="certificates-container">
+                <div class="certificate-item">
+                    <h3>Lorem ipsum dolor sit.</h3>
+                    <p>Issued by Coursera - June 2024</p>
+                </div>
+                <div class="certificate-item">
+                    <h3>Lorem, ipsum dolor sit amet consectetur 
+                    </h3>
+                    <p>Issued by Udemy - March 2024</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials-section" id="testimonials">
+            <h2>Testimonials</h2>
+            <div class="testimonials-container">
+                <div class="testimonial">
+                    <p>"Consequatur minima iusto consequuntur delectus debitis veniam maiores corporis libero."</p>
+                    <h4>- Sarah A., Project Manager</h4>
+                </div>
+                <div class="testimonial">
+                    <p>" veritatis unde aspernatur. Pariatur facere libero quidem dolores doloribus, quisquam impedit, perspiciatis ullam excepturi, repellendus consectetur officia molestias maxime inventore!"</p>
+                    <h4>- Mohammed B., Designer</h4>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer id="contact">
@@ -84,5 +116,26 @@
         </div>
         <p class="copyright">&copy; 2025 My Personal Website. All rights reserved.</p>
     </footer>
+
+    <button id="scrollToTopBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+
+    <script>
+        const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+        window.addEventListener("scroll", () => {
+            if (window.scrollY > 300) {
+                scrollToTopBtn.style.display = "block";
+            } else {
+                scrollToTopBtn.style.display = "none";
+            }
+        });
+
+        scrollToTopBtn.addEventListener("click", () => {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        });
+    </script>
 </body>
 </html>

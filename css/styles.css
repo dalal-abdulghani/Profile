@@ -185,3 +185,75 @@ footer {
         height: 150px;
     }
 }
+
+
+.download-cv {
+    display: inline-block;
+    margin-top: 1rem;
+    background-color: #fff;
+    color: #4a6fa5;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.download-cv:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+}
+
+.certificates-section,
+.testimonials-section {
+    padding: 3rem 1rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.certificates-container,
+.testimonials-container {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.certificate-item,
+.testimonial {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.testimonial p {
+    font-style: italic;
+    color: #555;
+}
+
+.testimonial h4 {
+    margin-top: 1rem;
+    text-align: right;
+    color: #333;
+}
+
+/* Scroll to Top Button */
+#scrollToTopBtn {
+    position: fixed;
+    bottom: 40px;
+    right: 30px;
+    display: none;
+    background-color: #4a6fa5;
+    color: white;
+    border: none;
+    padding: 0.75rem 1rem;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    cursor: pointer;
+    z-index: 1000;
+    transition: background-color 0.3s;
+}
+
+#scrollToTopBtn:hover {
+    background-color: #3a5a80;
+}
