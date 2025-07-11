@@ -1,0 +1,84 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f0f0f5;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+}
+
+.card {
+  max-width: 800px;
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 3px solid #ff6600;
+  margin-bottom: 20px;
+}
+
+.main-heading {
+  color: #333;
+  font-size: 2em;
+  margin-bottom: 5px;
+}
+
+.sub-heading {
+  color: #ff6600;
+  font-size: 1.2em;
+  margin-bottom: 15px;
+}
+
+.bio {
+  color: #444;
+  font-size: 1em;
+  margin-bottom: 20px;
+}
+
+hr {
+  border: none;
+  height: 2px;
+  background-color: #ddd;
+  margin: 20px 0;
+}
+
+.skills-list {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.skills-list li {
+  background-color: #f9f9f9;
+  padding: 10px 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.contact-button {
+  display: inline-block;
+  text-decoration: none;
+  background-color: #ff6600;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 25px;
+  transition: background-color 0.3s;
+}
+
+.contact-button:hover {
+  background-color: #e65c00;
+}
