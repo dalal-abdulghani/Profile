@@ -6,13 +6,15 @@
     <title>Dalal's Portfolio</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preload" href="./images/avatar.jpg" as="image">
+    <meta name="theme-color" content="#4a6fa5">
 </head>
 <body class="light-mode">
     <header>
         <nav class="navbar">
             <div class="navbar-container">
-                <div class="logo">Dalal</div>
-                <button class="hamburger" aria-label="Menu">
+                <a href="#" class="logo">Dalal</a>
+                <button class="hamburger" aria-label="Menu" aria-expanded="false">
                     <i class="fas fa-bars"></i>
                 </button>
                 <ul class="nav-menu">
@@ -33,10 +35,11 @@
         </nav>
 
         <div class="hero" id="bio">
+            <canvas id="particle-canvas"></canvas>
             <div class="hero-content">
-                <img src="/images/avatar.jpg" alt="Dalal's Profile Picture" class="profile-img">
+                <img src="./images/avatar.jpg" alt="Dalal's Profile Picture" class="profile-img" width="180" height="180">
                 <h1 class="title-animate">Hello, I'm Dalal</h1>
-                <p class="bio-text slide-in">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni explicabo maiores vel, dolore ipsa eos! Quasi libero impedit, laboriosam sint exercitationem atque modi, ipsum autem molestias expedita sit quia ad.</p>
+                <p class="bio-text slide-in">Front-end developer specializing in creating responsive, accessible web experiences. Passionate about clean code and intuitive user interfaces.</p>
                 <a href="/documents/Dalal_CV.pdf" download class="download-cv pulse">
                     <i class="fas fa-download"></i> Download My Resume
                 </a>
@@ -52,23 +55,26 @@
                     <i class="fab fa-html5"></i>
                     <h3>HTML5</h3>
                     <p>Semantic markup and accessibility</p>
+                    <div class="skill-bar"><span style="width: 95%"></span></div>
                 </div>
                 <div class="skill">
                     <i class="fab fa-css3-alt"></i>
                     <h3>CSS3</h3>
                     <p>Responsive design and animations</p>
+                    <div class="skill-bar"><span style="width: 90%"></span></div>
                 </div>
                 <div class="skill">
                     <i class="fab fa-js"></i>
                     <h3>JavaScript</h3>
                     <p>Interactive web experiences</p>
+                    <div class="skill-bar"><span style="width: 85%"></span></div>
                 </div>
                 <div class="skill">
                     <i class="fas fa-paint-brush"></i>
                     <h3>UI/UX</h3>
                     <p>User-centered design</p>
+                    <div class="skill-bar"><span style="width: 80%"></span></div>
                 </div>
-          
             </div>
         </section>
 
@@ -76,7 +82,7 @@
             <h2>My Work</h2>
             <div class="portfolio-container">
                 <div class="portfolio-item">
-                    <img src="./images/ecommerce-websites.jpg" alt="E-commerce Project" loading="lazy">
+                    <img src="./images/ecommerce-websites.jpg" alt="E-commerce Project" loading="lazy" width="400" height="250">
                     <div class="portfolio-overlay">
                         <h3>E-commerce Site</h3>
                         <p>A fully responsive online store</p>
@@ -84,7 +90,7 @@
                     </div>
                 </div>
                 <div class="portfolio-item">
-                    <img src="./images/arik-qBiqJnL2ieqVlvCUm0PdvANe0bIVLD.jpg" alt="Portfolio Template" loading="lazy">
+                    <img src="./images/arik-qBiqJnL2ieqVlvCUm0PdvANe0bIVLD.jpg" alt="Portfolio Template" loading="lazy" width="400" height="250">
                     <div class="portfolio-overlay">
                         <h3>Portfolio Template</h3>
                         <p>Clean, modern portfolio design</p>
@@ -92,7 +98,7 @@
                     </div>
                 </div>
                 <div class="portfolio-item">
-                    <img src="./images/UIFresh-weather-app-ui-banner-1.jpg" alt="Weather App" loading="lazy">
+                    <img src="./images/UIFresh-weather-app-ui-banner-1.jpg" alt="Weather App" loading="lazy" width="400" height="250">
                     <div class="portfolio-overlay">
                         <h3>Weather App</h3>
                         <p>Real-time weather application</p>
@@ -107,14 +113,20 @@
             <div class="certificates-container">
                 <div class="certificate-item">
                     <i class="fas fa-certificate"></i>
-                    <h3>Lorem ipsum dolor sit.</h3>
+                    <h3>Advanced Web Development</h3>
                     <p>Issued by Coursera - June 2024</p>
                     <a href="#" class="certificate-link">View Certificate</a>
                 </div>
                 <div class="certificate-item">
                     <i class="fas fa-certificate"></i>
-                    <h3>Lorem ipsum dolor sit amet.</h3>
+                    <h3>UI/UX Design Specialization</h3>
                     <p>Issued by Udemy - March 2024</p>
+                    <a href="#" class="certificate-link">View Certificate</a>
+                </div>
+                <div class="certificate-item">
+                    <i class="fas fa-certificate"></i>
+                    <h3>JavaScript Algorithms</h3>
+                    <p>Issued by freeCodeCamp - January 2024</p>
                     <a href="#" class="certificate-link">View Certificate</a>
                 </div>
             </div>
@@ -125,17 +137,17 @@
             <div class="testimonials-container">
                 <div class="testimonial">
                     <i class="fas fa-quote-left quote-icon"></i>
-                    <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus ullam voluptatibus et quidem aspernatur aut error quibusdam fuga laborum id!"</p>
+                    <p>"Dalal delivered exceptional work on our e-commerce project. Her attention to detail and problem-solving skills made the development process smooth and efficient."</p>
                     <div class="testimonial-author">
-                        <img src="./images/avatar.jpg" alt="Sarah A." class="testimonial-img">
+                        <img src="./images/avatar.jpg" alt="Sarah A." class="testimonial-img" width="50" height="50">
                         <h4>- Sarah A., Project Manager</h4>
                     </div>
                 </div>
                 <div class="testimonial">
                     <i class="fas fa-quote-left quote-icon"></i>
-                    <p>"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis suscipit doloribus at inventore assumenda deserunt ipsa sit, earum natus saepe"</p>
+                    <p>"Working with Dalal was a pleasure. She transformed our design concepts into a fully functional website that exceeded our expectations in both aesthetics and performance."</p>
                     <div class="testimonial-author">
-                        <img src="./images/avatar.jpg" alt="Mohammed B." class="testimonial-img">
+                        <img src="./images/avatar.jpg" alt="Mohammed B." class="testimonial-img" width="50" height="50">
                         <h4>- Mohammed B., Designer</h4>
                     </div>
                 </div>
@@ -161,8 +173,7 @@
         <p class="copyright">&copy; <span id="year"></span> Dalal's Portfolio. All rights reserved.</p>
     </footer>
 
-    <button id="scrollToTopBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
-
- 
+    <button id="scrollToTopBtn" title="Go to top" aria-label="Scroll to top"><i class="fas fa-arrow-up"></i></button>
+    <script src="./js/script.js"></script>
 </body>
 </html>
